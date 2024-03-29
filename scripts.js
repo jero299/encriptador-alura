@@ -82,7 +82,7 @@ function copiarTexto() {
     window.getSelection().removeAllRanges();
 }
 
-let textarea = document.getElementById("campo-mensaje");
+let textarea = document.getElementById("texto");
 textarea.addEventListener("input", function() {
     // Convertir todo el texto a minúsculas
     this.value = this.value.toLowerCase();
