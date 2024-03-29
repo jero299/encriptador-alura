@@ -81,3 +81,8 @@ function copiarTexto() {
 
     window.getSelection().removeAllRanges();
 }
+
+let textarea = document.getElementById("campo-mensaje");
+textarea.addEventListener("input", function() {
+    this.value = this.value.toLowerCase();
+});
