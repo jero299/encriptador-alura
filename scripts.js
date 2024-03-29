@@ -85,4 +85,5 @@ function copiarTexto() {
 let textarea = document.getElementById("campo-mensaje");
 textarea.addEventListener("input", function() {
     this.value = this.value.toLowerCase();
+    this.value = this.value.replace(/[^\w\s]/gi, "").toLowerCase();
 });
