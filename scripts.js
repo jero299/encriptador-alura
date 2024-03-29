@@ -84,6 +84,9 @@ function copiarTexto() {
 
 let textarea = document.getElementById("campo-mensaje");
 textarea.addEventListener("input", function() {
+    // Convertir todo el texto a minúsculas
     this.value = this.value.toLowerCase();
-    this.value = this.value.replace(/[^\w\s]/gi, "").toLowerCase();
+    // Reemplazar caracteres especiales, acentos y mayúsculas con una cadena vacía
+    this.value = this.value.replace(/[^a-z0-9\s]/gi, "");
 });
+
